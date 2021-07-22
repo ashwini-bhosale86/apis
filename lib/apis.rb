@@ -10,5 +10,4 @@ module Apis
       puts "#{response}"
     end
   end
-  # Your code goes here...
 end
