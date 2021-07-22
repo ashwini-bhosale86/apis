@@ -5,7 +5,7 @@ require_relative "apis/version"
 module Apis
   class Responses
   	def self.awesome?
-      puts "Hello world!!!!!!!!!!"
+      puts "This is sample api example!!!!"
       response = RestClient.post 'https://api.nowcerts.com/api/token', {grant_type:'password', username:'api', password:'123456Qw', client_id:'ngAuthApp'}, {content_type: 'text/plain'}
       puts "#{response}"
     end
