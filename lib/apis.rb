@@ -6,10 +6,6 @@ require_relative 'apis/nowcerts'
 
 module Apis
   class Responses
-    def self.awesome?
-      response = RestClient.post 'https://api.nowcerts.com/api/token', {grant_type:'password', username:'api', password:'123456Qw', client_id:'ngAuthApp'}, {content_type: 'text/plain'}
-    end
-
     def self.authorize(type, url, header)
       request(type, url, header)
     end
